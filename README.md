@@ -1,1 +1,1 @@
-update deploy
+update deploys
