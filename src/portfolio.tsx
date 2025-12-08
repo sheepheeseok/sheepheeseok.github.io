@@ -119,7 +119,7 @@ export default function Portfolio() {
                 <div className="projects-grid">
 
                     <div className="project-card" onClick={() => window.open("https://github.com/sheepheeseok/mood_diary.git", "_blank")}>
-                        <img src="/src/assets/project1.png" className="project-img" alt="Mood Diary"/>
+                        <img src="/project1.png" className="project-img" alt="Mood Diary"/>
 
                         <div className="project-overlay">
                             <p className="project-number">01</p>
@@ -133,7 +133,7 @@ export default function Portfolio() {
                     </div>
 
                     <div className="project-card" onClick={() => window.open("https://github.com/sheepheeseok/ClimbCommunity.git", "_blank")}>
-                        <img src="/src/assets/project2.png" className="project-img" alt="Mood Diary"/>
+                        <img src="/project2.png" className="project-img" alt="Mood Diary"/>
 
                         <div className="project-overlay">
                             <p className="project-number">02</p>
@@ -147,7 +147,7 @@ export default function Portfolio() {
                     </div>
 
                     <div className="project-card" onClick={() => window.open("https://github.com/sheepheeseok/heallink.git", "_blank")}>
-                        <img src="/src/assets/project3.png" className="project-img" alt="Mood Diary"/>
+                        <img src="/project3.png" className="project-img" alt="Mood Diary"/>
 
                         <div className="project-overlay">
                             <p className="project-number">03</p>
