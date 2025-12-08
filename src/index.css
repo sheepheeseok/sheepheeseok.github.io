@@ -1,0 +1,448 @@
+/* -------------------- */
+/* Global */
+/* -------------------- */
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Pretendard", sans-serif;
+    background: #ffffff;
+    color: #000000;
+}
+
+.portfolio-container {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* -------------------- */
+/* Hero Section */
+/* -------------------- */
+
+.hero-section {
+    height: 100vh;
+    min-height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.spark-icon {
+    width: 64px;
+    height: 64px;
+    opacity: 0.85;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+.hero-title {
+    font-size: clamp(60px, 10vw, 170px);
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    margin: 0;
+}
+
+.hero-subtitle {
+    margin-top: 2rem;
+    font-size: clamp(14px, 1.4vw, 26px);
+    color: #666666;
+    letter-spacing: 0.03em;
+}
+
+.hero-title {
+    font-size: 52px;       /* ★ 글씨 키움 */
+    font-weight: 700;
+    line-height: 1.25;
+    text-align: center;
+    color: #111;
+    margin-bottom: 16px;
+}
+
+.hero-subtitle {
+    font-size: 20px;       /* 조금 더 존재감 추가 */
+    font-weight: 300;
+    text-align: center;
+    color: #555;
+    margin-bottom: 60px;
+}
+
+/* Scroll hint */
+.scroll-hint {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #bbbbbb;
+    font-size: 0.76rem;
+    letter-spacing: 0.2em;
+}
+
+.scroll-line {
+    width: 1px;
+    height: 60px;
+    background: linear-gradient(to bottom, #000, transparent);
+    margin: 0 auto;
+    animation: scrollFade 2.5s infinite;
+}
+
+@keyframes scrollFade {
+    0% { opacity: 0; transform: translateY(-10px); }
+    50% { opacity: 1; transform: translateY(10px); }
+    100% { opacity: 0; transform: translateY(-5px); }
+}
+
+/* -------------------- */
+/* Skills Section */
+/* -------------------- */
+.skill-5 .skill-icon {
+    transform: translateY(1px);
+}
+.skill-6 .skill-icon {
+    transform: translateY(-2px);
+}
+.skill-4 .skill-icon {
+    transform: translateY(-1px);
+}
+.skill-3 .skill-icon {
+    transform: translateY(3px);
+}
+
+.skill-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    opacity: 0.9;
+    vertical-align: middle;
+}
+
+.skills-section {
+    padding: 10%;
+    background: #fafafa;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    margin-bottom: 5rem;
+}
+
+.orbit-container {
+    width: 650px;
+    height: 650px;
+    max-width: 90vw;
+    max-height: 90vw;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Orbit Base (circle only) */
+.orbit {
+    position: absolute;
+    border: 1px solid #e3e3e3;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.orbit-rotate-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: center;
+}
+
+/* Dot rotates around orbit */
+.orbit-dot {
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background: #111;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+/* Rotation Animation */
+@keyframes orbit-rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Each orbit rotates at a different speed */
+.orbit-1 { width: 250px; height: 250px; }
+.orbit-1 .orbit-rotate-wrapper {
+    animation: orbit-rotate 14s linear infinite;
+}
+
+.orbit-2 { width: 400px; height: 400px; }
+.orbit-2 .orbit-rotate-wrapper {
+    animation: orbit-rotate 20s linear infinite;
+}
+
+.orbit-3 { width: 550px; height: 550px; }
+.orbit-3 .orbit-rotate-wrapper {
+    animation: orbit-rotate 28s linear infinite;
+}
+
+/* Center Label */
+.orbit-center {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    background: #ffffff;
+}
+
+/* Skill Badges */
+.skill {
+    position: absolute;
+    background: #ffffff;
+    border: 1.5px solid #000;
+    border-radius: 40px;
+    padding: 1rem 1.6rem;
+    font-size: 0.92rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.25s ease;
+    letter-spacing: 0.03em;
+}
+
+.skill:hover {
+    background: #111;
+    color: #fff;
+    transform: translateX(6px) translateY(-2px) scale(1.05);
+    border-color: #111;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+}
+
+.skill:hover svg path { stroke: #fff; }
+
+/* Centered items */
+.skill-1,
+.skill-4 {
+    transform: translateX(-50%);
+}
+
+/* Skill hover transform merge */
+.skill-1:hover,
+.skill-4:hover {
+    transform: translateX(-50%) translateX(6px) translateY(-2px) scale(1.05);
+}
+
+/* NEW Balanced Positions */
+.skill-1 { top: 6%; left: 50%; transform: translate(-50%, 0); }
+.skill-2 { top: 25%; right: 10%; }
+.skill-3 { bottom: 25%; right: 8%; }
+.skill-4 { bottom: 6%; left: 50%; transform: translate(-50%, 0); }
+.skill-5 { bottom: 25%; left: 8%; }
+.skill-6 { top: 25%; left: 10%; }
+
+/* -------------------- */
+/* About Section */
+/* -------------------- */
+
+.about-section {
+    padding: 10%;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr; /* ← 좌측 폭 줄이고 우측 확대 */
+    gap: 6%;
+    align-items: start;
+}
+
+.about-title {
+    font-size: clamp(60px, 8vw, 150px);
+    font-weight: 900;
+    letter-spacing: 0.04em;
+}
+
+.about-card {
+    background: #f8f8f8;
+    padding: 3rem;
+    border-left: 3px solid #000;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* -------------------- */
+/* Projects Section */
+/* -------------------- */
+
+.projects-section {
+    padding: 10%;
+    background: #fff !important;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 4rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2.5rem;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    height: 260px;
+    transition: 0.35s ease;
+}
+
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .6s ease;
+}
+
+/* hover 시 카드가 살짝 뜸 */
+.project-card:hover .project-img {
+    transform: translateY(-6px);
+    box-shadow: 0px 20px 40px rgba(0,0,0,0.12);
+}
+
+/* 오버레이 (hover 전에는 숨김) */
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    padding: 1.6rem;
+    background: rgba(0,0,0,0.55);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.45s ease;
+}
+
+/* hover 시 오버레이 등장 */
+.project-card:hover .project-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 텍스트 스타일 */
+.project-number {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #dfdfdf;
+}
+
+.project-title {
+    margin: 0.6rem 0;
+    font-size: 1.9rem;
+    font-weight: 900;
+}
+
+.project-desc {
+    color: #f0f0f0;
+    margin-bottom: 1.6rem;
+    line-height: 1.6;
+}
+
+/* 화살표 */
+.project-arrow {
+    font-size: 1.8rem;
+    transition: 0.3s ease;
+}
+
+
+
+/* -------------------- */
+/* Contact Section */
+/* -------------------- */
+
+.contact-section {
+    padding: 10%;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: clamp(50px, 8vw, 140px);
+    font-weight: 900;
+}
+
+.contact-email {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: #888;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.contact-email:hover {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+.social-links {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #999;
+    font-size: 0.9rem;
+    letter-spacing: 0.15em;
+}
+
+.social-links a:hover {
+    color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-section {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
