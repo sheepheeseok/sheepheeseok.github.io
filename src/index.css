@@ -446,3 +446,135 @@ body {
         gap: 3rem;
     }
 }
+
+/* =========================
+   Experience Section
+========================= */
+
+.experience-section {
+    padding: 140px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.timeline {
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.timeline-item {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    position: relative;
+}
+
+.timeline-year {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+    min-width: 40px;
+    text-align: right;
+    letter-spacing: 0.04em;
+}
+
+.timeline-content {
+    padding-left: 32px;
+    position: relative;
+}
+
+.timeline-content::before {
+    content: "";
+    position: absolute;
+    left: -23px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #111;
+}
+
+.timeline-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.timeline-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* =========================
+   Stack Detail Section
+========================= */
+
+.stack-section {
+    padding: 140px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stack-grid {
+    margin-top: 72px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+}
+
+.stack-card {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 32px 28px;
+    border-radius: 20px;
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stack-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+}
+
+.stack-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.stack-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stack-card li {
+    font-size: 14.5px;
+    line-height: 1.8;
+    color: #444;
+    position: relative;
+    padding-left: 14px;
+}
+
+.stack-card li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #111;
+    font-size: 14px;
+}
