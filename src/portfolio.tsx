@@ -28,6 +28,60 @@ export default function Portfolio() {
                 </div>
             </section>
 
+            {/* Intro Profile Section */}
+            {/* Intro Profile Section */}
+            <section className="intro-section">
+                <div className="intro-wrapper">
+
+                    {/* Left – Profile */}
+                    <div className="intro-profile">
+                        <div className="profile-image-wrapper">
+                            <img src="/profile.jpg" alt="양희석 프로필"/>
+                        </div>
+                    </div>
+
+                    {/* Right – Info */}
+                    <div className="intro-info">
+
+                        <div className="intro-block">
+                            <h3 className="intro-title">ABOUT ME</h3>
+                            <ul className="intro-list">
+                                <li>양희석</li>
+                                <li>2002.04.12</li>
+                                <li>010-9972-4782</li>
+                                <li>sheeph001@gmail.com</li>
+                            </ul>
+                        </div>
+
+                        <div className="intro-block">
+                            <h3 className="intro-title">EDUCATION</h3>
+                            <ul className="intro-list">
+                                <li>2026년 2월 / 신구대학교 컴퓨터소프트웨어과 졸업</li>
+                            </ul>
+                        </div>
+
+                        <div className="intro-block">
+                            <h3 className="intro-title">LICENSE</h3>
+                            <ul className="intro-list">
+                                <li>e-Test Professionals Matser</li>
+                                <li>AWS Certified AI Practitioner (취득 예정)</li>
+                            </ul>
+                        </div>
+
+                        <div className="intro-block">
+                            <h3 className="intro-title">PROJECT FOCUS</h3>
+                            <ul className="intro-tags">
+                                <li>O2O Platform</li>
+                                <li>SNS Service</li>
+                                <li>Web Platform</li>
+                                <li>Data-driven UX</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
 
             <section className="skills-section">
                 <h2 className="section-title">핵심 기술</h2>
@@ -112,92 +166,78 @@ export default function Portfolio() {
                 </div>
             </section>
 
-            <section className="about-section">
-                <h2 className="section-title">개발 철학</h2>
-
-                <p className="about-text">
-                    저는 기술 자체보다 <strong>문제를 정의하고 구조화하는 과정</strong>을
-                    가장 중요하게 생각합니다.<br/>
-                    사용자 경험, 데이터 구조, 확장성을 동시에 고려하며
-                    오래 유지될 수 있는 제품을 만드는 개발자입니다.
-                </p>
-
-                <div className="about-keywords">
-                    <span>Problem Solving</span>
-                    <span>Product Thinking</span>
-                    <span>Scalable Architecture</span>
-                    <span>User Experience</span>
-                </div>
-            </section>
-
             <section className="experience-section">
-                <h2 className="section-title">경험 & 성장</h2>
+                <div className="section-container">
+                    <h2 className="section-title">경험 & 성장</h2>
 
-                <div className="timeline">
-                    <div className="timeline-item">
-                        <span className="timeline-year">2023</span>
-                        <div className="timeline-content">
-                            <h3>웹·모바일 개발 시작</h3>
-                            <p>
-                                React, Spring Boot를 기반으로
-                                서비스 구조와 API 설계를 중심으로 학습을 시작했습니다.
-                            </p>
+                    <div className="timeline">
+                        <div className="timeline-item">
+                            <span className="timeline-year">2024</span>
+                            <div className="timeline-content">
+                                <h3>웹·모바일 개발 시작</h3>
+                                <p>
+                                    React, Spring Boot를 기반으로
+                                    서비스 구조와 API 설계를 중심으로 학습을 시작했습니다.
+                                </p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div className="timeline-item">
-                        <span className="timeline-year">2024</span>
-                        <div className="timeline-content">
-                            <h3>실서비스 수준 프로젝트 개발</h3>
-                            <p>
-                                SNS, O2O 플랫폼을 직접 설계하며
-                                인증, 데이터 모델링, 클라우드 배포까지 경험했습니다.
-                            </p>
+                        <div className="timeline-item">
+                            <span className="timeline-year">2025</span>
+                            <div className="timeline-content">
+                                <h3>실서비스 수준 프로젝트 개발</h3>
+                                <p>
+                                    SNS, O2O 플랫폼을 직접 설계하며
+                                    인증, 데이터 모델링, 클라우드 배포까지 경험했습니다.
+                                </p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div className="timeline-item">
-                        <span className="timeline-year">Now</span>
-                        <div className="timeline-content">
-                            <h3>제품 중심 개발자</h3>
-                            <p>
-                                기능 구현을 넘어
-                                “왜 필요한가”를 설명할 수 있는 개발자를 지향합니다.
-                            </p>
+                        <div className="timeline-item">
+                            <span className="timeline-year">Now</span>
+                            <div className="timeline-content">
+                                <h3>제품 중심 개발자</h3>
+                                <p>
+                                    기능 구현을 넘어
+                                    “왜 필요한가”를 설명할 수 있는 개발자를 지향합니다.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section className="stack-section">
-                <h2 className="section-title">기술 스택 상세</h2>
+                <div className="section-container">
+                    <h2 className="section-title">기술 스택 상세</h2>
 
-                <div className="stack-grid">
-                    <div className="stack-card">
-                        <h3>Backend</h3>
-                        <ul>
-                            <li>Spring Boot, JPA, QueryDSL</li>
-                            <li>JWT 인증 / OAuth2</li>
-                            <li>REST API 설계 및 버전 관리</li>
-                        </ul>
-                    </div>
+                    <div className="stack-grid">
+                        <div className="stack-card">
+                            <h3>Backend</h3>
+                            <ul>
+                                <li>Spring Boot, JPA, QueryDSL</li>
+                                <li>JWT 인증</li>
+                                <li>REST API 설계</li>
+                            </ul>
+                        </div>
 
-                    <div className="stack-card">
-                        <h3>Frontend</h3>
-                        <ul>
-                            <li>React, TypeScript</li>
-                            <li>UX 중심 컴포넌트 설계</li>
-                            <li>모바일 반응형 & 애니메이션</li>
-                        </ul>
-                    </div>
+                        <div className="stack-card">
+                            <h3>Frontend</h3>
+                            <ul>
+                                <li>React, TypeScript</li>
+                                <li>UX 중심 컴포넌트 설계</li>
+                                <li>모바일 반응형 & 애니메이션</li>
+                            </ul>
+                        </div>
 
-                    <div className="stack-card">
-                        <h3>Infrastructure</h3>
-                        <ul>
-                            <li>AWS EC2, RDS, S3, CloudFront</li>
-                            <li>Docker 기반 환경 구성</li>
-                            <li>GitHub Actions CI/CD</li>
-                        </ul>
+                        <div className="stack-card">
+                            <h3>Infrastructure</h3>
+                            <ul>
+                                <li>AWS EC2, RDS, S3, CloudFront</li>
+                                <li>Docker 기반 환경 구성</li>
+                                <li>GitHub Actions CI/CD</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -447,14 +447,24 @@ body {
     }
 }
 
+/* 공통 중앙 정렬 컨테이너 */
+.section-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
 /* =========================
    Experience Section
 ========================= */
 
 .experience-section {
-    padding: 140px 24px;
-    max-width: 1100px;
-    margin: 0 auto;
+    padding: 140px 0;
+}
+
+.experience-section .section-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .timeline {
@@ -525,9 +535,12 @@ body {
 ========================= */
 
 .stack-section {
-    padding: 140px 24px;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 140px 0;
+}
+
+.stack-section .section-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .stack-grid {
@@ -578,3 +591,94 @@ body {
     color: #111;
     font-size: 14px;
 }
+
+/* Intro Section */
+.intro-section {
+    max-width: 1200px;
+    margin: 0 auto 160px;
+    padding: 0 40px;
+}
+
+.intro-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 120px;
+}
+
+/* Profile (Left) */
+.intro-profile {
+    width: 400px;
+    flex-shrink: 0;
+}
+
+.profile-image-wrapper {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Info (Right) */
+.intro-info {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    padding-top: 12px;
+}
+
+/* Blocks */
+.intro-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.intro-title {
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    font-weight: 600;
+    color: #777;
+}
+
+.intro-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #111;
+}
+
+/* Lists */
+.intro-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.intro-list li {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Tags */
+.intro-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.intro-tags li {
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: #f2f2f2;
+    color: #111;
+}
+
