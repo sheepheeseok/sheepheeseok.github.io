@@ -70,9 +70,9 @@ export default function Portfolio() {
                         <div className="intro-block">
                             <h3 className="intro-title">PROJECT FOCUS</h3>
                             <ul className="intro-tags">
-                                <li>Mobile App Service</li>
                                 <li>SNS Service</li>
                                 <li>Web Platform</li>
+                                <li>Mobile App Service</li>
                             </ul>
                         </div>
 
