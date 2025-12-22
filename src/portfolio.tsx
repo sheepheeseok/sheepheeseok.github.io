@@ -64,17 +64,15 @@ export default function Portfolio() {
                             <h3 className="intro-title">LICENSE</h3>
                             <ul className="intro-list">
                                 <li>e-Test Professionals Matser</li>
-                                <li>AWS Certified AI Practitioner (취득 예정)</li>
                             </ul>
                         </div>
 
                         <div className="intro-block">
                             <h3 className="intro-title">PROJECT FOCUS</h3>
                             <ul className="intro-tags">
-                                <li>O2O Platform</li>
+                                <li>Mobile App Service</li>
                                 <li>SNS Service</li>
                                 <li>Web Platform</li>
-                                <li>Data-driven UX</li>
                             </ul>
                         </div>
 
@@ -187,7 +185,7 @@ export default function Portfolio() {
                             <div className="timeline-content">
                                 <h3>실서비스 수준 프로젝트 개발</h3>
                                 <p>
-                                    SNS, O2O 플랫폼을 직접 설계하며
+                                    SNS Mobile 플랫폼을 직접 설계하며
                                     인증, 데이터 모델링, 클라우드 배포까지 경험했습니다.
                                 </p>
                             </div>
