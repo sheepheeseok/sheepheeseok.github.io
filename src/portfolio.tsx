@@ -277,21 +277,6 @@ export default function Portfolio() {
                         </div>
                     </div>
 
-                    <div className="project-card"
-                         onClick={() => window.open("https://github.com/sheepheeseok/heallink.git", "_blank")}>
-                        <img src="/project3.png" className="project-img" alt="Mood Diary"/>
-
-                        <div className="project-overlay">
-                            <p className="project-number">03</p>
-                            <h3 className="project-title">HealLink</h3>
-                            <p className="project-desc">
-                                시술 정보와 리뷰 기반으로 개인 맞춤
-                                의료 탐색을 지원하는 O2O 헬스케어 플랫폼입니다.
-                            </p>
-                            <span className="project-arrow">→</span>
-                        </div>
-                    </div>
-
                 </div>
             </section>
 
