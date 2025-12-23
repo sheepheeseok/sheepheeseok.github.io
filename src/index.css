@@ -320,13 +320,39 @@ body {
 
 .project-card {
     position: relative;
-    overflow: hidden;
+    overflow: visible; /* ★ hidden → visible */
     border-radius: 12px;
     cursor: pointer;
     height: 260px;
     transition: 0.35s ease;
 }
 
+.project-card.highlight::after {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    border-radius: 16px;
+    border: 2px solid rgba(79, 172, 254, 0.9);
+    box-shadow: 0 0 18px rgba(79, 172, 254, 0.6);
+    animation: project-glow 1.6s ease-out;
+    pointer-events: none;
+    z-index: 10; /* ★ 이게 핵심 */
+}
+
+@keyframes project-glow {
+    0% {
+        opacity: 0;
+        box-shadow: 0 0 0 0 rgba(79, 172, 254, 0.7);
+    }
+    30% {
+        opacity: 1;
+        box-shadow: 0 0 18px 4px rgba(79, 172, 254, 0.5);
+    }
+    100% {
+        opacity: 0;
+        box-shadow: 0 0 0 0 rgba(79, 172, 254, 0);
+    }
+}
 
 .project-img {
     width: 100%;
@@ -390,6 +416,26 @@ body {
     transition: 0.3s ease;
 }
 
+/* =========================
+   Experience → Project Link
+========================= */
+
+.timeline-item.clickable {
+    cursor: pointer;
+}
+
+.timeline-content.linked {
+    transition: transform 0.25s ease, background 0.25s ease;
+    padding-right: 12px;
+}
+
+.timeline-item.clickable:hover .timeline-content.linked {
+    transform: translateX(6px);
+}
+
+.timeline-item.clickable:hover h3 {
+    text-decoration: underline;
+}
 
 
 /* -------------------- */
@@ -682,6 +728,46 @@ body {
     color: #111;
 }
 
+/* =========================
+   Experience Right Meta
+========================= */
+
+.timeline-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+/* 상태 배지 */
+.project-badge {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    padding: 4px 8px;
+    border-radius: 999px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.project-badge.launch {
+    background: rgba(0, 0, 0, 0.08);
+    color: #111;
+}
+
+.project-badge.ing {
+    background: rgba(79, 172, 254, 0.14);
+    color: #4FACFE;
+}
+
+/* 프로젝트 이름 */
+.project-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+}
+
+
 @media (max-width: 1024px) {
 
     /* Global spacing */
@@ -850,6 +936,27 @@ body {
         top: 6px;
         width: 8px;
         height: 8px;
+    }
+
+    /* =========================
+   Experience → Project Link
+========================= */
+
+    .timeline-item.clickable {
+        cursor: pointer;
+    }
+
+    .timeline-content.linked {
+        transition: transform 0.25s ease, background 0.25s ease;
+        padding-right: 12px;
+    }
+
+    .timeline-item.clickable:hover .timeline-content.linked {
+        transform: translateX(6px);
+    }
+
+    .timeline-item.clickable:hover h3 {
+        text-decoration: underline;
     }
 }
 

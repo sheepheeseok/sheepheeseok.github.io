@@ -1,6 +1,19 @@
 import "./index.css";
 
 export default function Portfolio() {
+
+    const scrollToProject = (key: string) => {
+        const el = document.getElementById(`project-${key}`);
+        if (!el) return;
+
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+
+        el.classList.add("highlight");
+        setTimeout(() => {
+            el.classList.remove("highlight");
+        }, 1600);
+    };
+
     return (
         <div className="portfolio-container">
 
@@ -169,38 +182,70 @@ export default function Portfolio() {
                     <h2 className="section-title">경험 & 성장</h2>
 
                     <div className="timeline">
-                        <div className="timeline-item">
+
+                        {/* 2024 */}
+                        <div
+                            className="timeline-item clickable"
+                            onClick={() => scrollToProject("mood")}
+                        >
                             <span className="timeline-year">2024</span>
-                            <div className="timeline-content">
-                                <h3>웹·모바일 개발 시작</h3>
+
+                            <div className="timeline-content linked">
+                                <div className="timeline-meta">
+                                    <span className="project-badge launch">LAUNCH</span>
+                                    <span className="project-name">Mood Diary</span>
+                                </div>
+
+                                <h3>모바일 감정 일기 앱 출시</h3>
                                 <p>
-                                    React, Spring Boot를 기반으로
-                                    서비스 구조와 API 설계를 중심으로 학습을 시작했습니다.
+                                    React Native 기반 감정 기록 앱을 개발하며
+                                    상태 관리, UX 흐름, 로컬 데이터 저장 구조를 경험했습니다.
                                 </p>
                             </div>
                         </div>
 
-                        <div className="timeline-item">
+                        {/* 2025 */}
+                        <div
+                            className="timeline-item clickable"
+                            onClick={() => scrollToProject("climb")}
+                        >
                             <span className="timeline-year">2025</span>
-                            <div className="timeline-content">
-                                <h3>실서비스 수준 프로젝트 개발</h3>
+
+                            <div className="timeline-content linked">
+                                <div className="timeline-meta">
+                                    <span className="project-badge launch">LAUNCH</span>
+                                    <span className="project-name">Climb Community</span>
+                                </div>
+
+                                <h3>클라이밍 SNS 커뮤니티 플랫폼</h3>
                                 <p>
-                                    SNS Mobile 플랫폼을 직접 설계하며
-                                    인증, 데이터 모델링, 클라우드 배포까지 경험했습니다.
+                                    인증, 게시글, 이미지 업로드, 서버 배포까지
+                                    실서비스 수준의 모바일 SNS 플랫폼을 구현했습니다.
                                 </p>
                             </div>
                         </div>
 
-                        <div className="timeline-item">
-                            <span className="timeline-year">Now</span>
-                            <div className="timeline-content">
-                                <h3>제품 중심 개발자</h3>
+                        {/* NOW */}
+                        <div
+                            className="timeline-item current clickable"
+                            onClick={() => scrollToProject("heal")}
+                        >
+                            <span className="timeline-year">NOW</span>
+
+                            <div className="timeline-content linked">
+                                <div className="timeline-meta">
+                                    <span className="project-badge ing">ING</span>
+                                    <span className="project-name">HealLink</span>
+                                </div>
+
+                                <h3>O2O 메디컬 플랫폼 개발 중</h3>
                                 <p>
-                                    기능 구현을 넘어
-                                    “왜 필요한가”를 설명할 수 있는 개발자를 지향합니다.
+                                    병원·사용자 연결을 중심으로
+                                    실제 비즈니스 흐름을 고려한 제품 설계를 진행하고 있습니다.
                                 </p>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -245,8 +290,11 @@ export default function Portfolio() {
 
                 <div className="projects-grid">
 
-                    <div className="project-card"
-                         onClick={() => window.open("https://github.com/sheepheeseok/mood_diary.git", "_blank")}>
+                    <div
+                        id="project-mood"
+                        className="project-card"
+                        onClick={() => window.open("https://github.com/sheepheeseok/mood_diary.git", "_blank")}
+                    >
                         <img src="/project1.png" className="project-img" alt="Mood Diary"/>
 
                         <div className="project-overlay">
@@ -260,8 +308,11 @@ export default function Portfolio() {
                         </div>
                     </div>
 
-                    <div className="project-card"
-                         onClick={() => window.open("https://github.com/sheepheeseok/ClimbCommunity.git", "_blank")}>
+                    <div
+                        id="project-climb"
+                        className="project-card"
+                        onClick={() => window.open("https://github.com/sheepheeseok/ClimbCommunity.git", "_blank")}
+                    >
                         <img src="/project2.png" className="project-img" alt="Mood Diary"/>
 
                         <div className="project-overlay">
