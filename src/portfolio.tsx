@@ -77,6 +77,7 @@ export default function Portfolio() {
                             <h3 className="intro-title">LICENSE</h3>
                             <ul className="intro-list">
                                 <li>e-Test Professionals Matser</li>
+                                 <li>AWS Certified AI Practitioner</li>
                             </ul>
                         </div>
 
