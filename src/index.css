@@ -144,6 +144,16 @@ body {
     margin-bottom: 5rem;
 }
 
+.section2-title {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    padding-left: 40px;
+    padding-top: 20px;
+    background: #f3f3f3;
+    margin:0;
+}
+
 .orbit-container {
     width: 650px;
     height: 650px;
@@ -960,3 +970,958 @@ body {
     }
 }
 
+.jobrecord-overview-section {
+    padding: 140px 0;
+    background: #f3f3f3;
+}
+
+.jobrecord-overview-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.jobrecord-overview-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.jobrecord-title {
+    font-size: 88px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.jobrecord-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.jobrecord-tagline {
+    font-size: 15px;
+    color: #78716c;
+    margin-bottom: 20px;
+}
+
+.jobrecord-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    color: #57534e;
+}
+
+.meta-label {
+    opacity: 0.6;
+    margin-right: 6px;
+}
+
+.jobrecord-overview-right {
+    display: flex;
+    justify-content: center;
+}
+
+.jobrecord-app-image {
+    width: 380px;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.jobrecord-detail-section {
+    padding: 140px 120px;
+    background: linear-gradient(135deg, #a8b5a0 0%, #9aad98 100%);
+    color: white;
+}
+
+.jobrecord-detail-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.jobrecord-detail-header {
+    margin-bottom: 80px;
+}
+
+.jobrecord-detail-page-title {
+    font-size: 14px;
+    opacity: 0.7;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.jobrecord-detail-main-heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.jobrecord-detail-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 80px;
+}
+
+.jobrecord-problems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.jobrecord-problem-card {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 28px 24px;
+}
+
+.jobrecord-problem-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.jobrecord-problem-card p {
+    font-size: 13px;
+    opacity: 0.85;
+}
+
+.jobrecord-solution h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.jobrecord-solution p {
+    font-size: 16px;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* ============================= */
+/* JobRecord Comparison Slide   */
+/* ============================= */
+
+.jobrecord-comparison-slide {
+    background: linear-gradient(135deg, #a8b5a0 0%, #9aad98 100%);
+    padding: 140px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ---------- Background Keywords ---------- */
+
+.background-keywords {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.keyword-bubble {
+    position: absolute;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.25;
+    padding: 28px;
+    border: 1px solid rgba(255,255,255,0.4);
+    color: white;
+    animation: float 6s ease-in-out infinite;
+}
+
+.bubble-1 { top: 8%; left: 6%; }
+.bubble-2 { top: 30%; left: 10%; animation-delay: 2s; }
+.bubble-3 { bottom: 15%; left: 8%; animation-delay: 1s; }
+
+.bubble-4 { top: 10%; right: 6%; animation-delay: 1.5s; }
+.bubble-5 { bottom: 20%; right: 8%; animation-delay: 0.5s; }
+.bubble-6 { bottom: 8%; right: 18%; animation-delay: 2.5s; }
+
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-18px); }
+}
+
+/* ============================= */
+/* JobRecord Comparison (Flat)  */
+/* ============================= */
+
+.jobrecord-comparison-slide {
+    padding: 120px 0;
+    background: #f3f3f1; /* Canva처럼 연한 회색 배경 */
+}
+
+.comparison-flat-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comparison-flat-container {
+    position: relative;
+    width: 1100px;
+    height: 420px;
+    display: flex;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 220px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+}
+
+/* Left */
+.comparison-left {
+    flex: 1;
+    background: #5f5f5f;
+    border-radius: 220px 0 0 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+/* Center */
+.comparison-center {
+    width: 260px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #7e8f89;
+    z-index: 2;
+}
+
+/* Right */
+.comparison-right {
+    flex: 1;
+    background: #92a298;
+    border-radius: 0 220px 220px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+/* Text */
+.comparison-content {
+    text-align: center;
+    color: white;
+}
+
+.comparison-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+.comparison-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comparison-list li {
+    margin-bottom: 14px;
+    font-size: 14px;
+    opacity: 0.95;
+}
+
+.comparison-bg-circles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* 기본 원 스타일 */
+.bg-circle {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 500;
+    z-index: 1;
+}
+
+/* 왼쪽(회색 계열) */
+.bg-left {
+    background: rgba(90, 90, 90, 0.05);
+    border: 1px solid rgba(90, 90, 90, 0.15);
+    color: rgba(90, 90, 90, 0.6);
+}
+
+/* 오른쪽 키워드 원 */
+.bg-right {
+    background: rgba(146, 162, 152, 0.08);
+    border: 1px solid rgba(146, 162, 152, 0.25);
+    color: rgba(126, 143, 137, 0.8);
+}
+
+/* === 개별 위치 === */
+
+/* Left */
+.bg-1 { top: 10%; left: 6%; }
+.bg-2 { top: 28%; left: 12%; }
+.bg-3 { bottom: 15%; left: 8%; }
+
+/* Right */
+.bg-4 { top: 12%; right: 8%; }
+.bg-5 { bottom: 18%; right: 10%; }
+.bg-6 { bottom: 8%; right: 18%; }
+
+/* === 부드러운 부유 애니메이션 === */
+@keyframes floatSoft {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-18px); }
+    100% { transform: translateY(0px); }
+}
+
+/* SECTION */
+.jobrecord-userflow-section {
+    position: relative;
+    padding: 120px 0;
+    background: #f6f8f6;
+    overflow: hidden;
+}
+
+.userflow-container {
+    width: 1300px;
+    max-width: 94%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 120px;
+    align-items: center;
+}
+
+/* DIAGRAM */
+.userflow-diagram {
+    overflow-x: auto;
+    padding-bottom: 40px;
+}
+
+/* 가로 전체 흐름 */
+.flow-horizontal {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    min-width: 1400px;
+}
+
+/* 그룹 */
+.flow-group {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-width: 180px;
+}
+
+/* 노드 */
+.userflow-node {
+    padding: 12px 20px;
+    border-radius: 24px;
+    background: #ffffff;
+    border: 1px solid rgba(146,162,152,0.5);
+    color: #5e746d;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    transition: 0.25s ease;
+}
+
+.userflow-node:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(146,162,152,0.2);
+}
+
+/* 강조 노드 */
+.userflow-node.primary,
+.userflow-node.highlight {
+    background: #92A298;
+    color: #fff;
+    border: none;
+}
+
+/* 가로 점선 */
+.flow-connector {
+    height: 2px;
+    width: 60px;
+    background: repeating-linear-gradient(
+            to right,
+            #92A298,
+            #92A298 6px,
+            transparent 6px,
+            transparent 14px
+    );
+    opacity: 0.5;
+}
+
+/* 가로 확장 */
+.flow-row {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* FLOW BLOCK */
+.flow-block {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-width: 180px;
+}
+
+/* NODE */
+.userflow-node {
+    padding: 12px 22px;
+    border-radius: 24px;
+    background: #ffffff;
+    border: 1px solid rgba(146, 162, 152, 0.4);
+    color: #5e746d;
+    font-weight: 600;
+    font-size: 13px;
+    text-align: center;
+    transition: 0.25s ease;
+    white-space: nowrap;
+}
+
+.userflow-node:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(146, 162, 152, 0.2);
+}
+
+/* 강조 노드 */
+.userflow-node.primary,
+.userflow-node.highlight {
+    background: #92a298;
+    color: white;
+    border: none;
+}
+
+/* 수평 점선 연결 */
+.flow-connector.vertical {
+    height: 2px;
+    width: 100%;
+    background: repeating-linear-gradient(
+            to right,
+            #92a298,
+            #92a298 6px,
+            transparent 6px,
+            transparent 14px
+    );
+    opacity: 0.5;
+    animation: flowMove 4s linear infinite;
+}
+
+@keyframes flowMove {
+    0% { background-position: 0 0; }
+    100% { background-position: 40px 0; }
+}
+
+/* RIGHT INFO */
+.userflow-info {
+    position: sticky;
+    top: 160px;
+}
+
+.userflow-title {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    color: #2f3d38;
+}
+
+.userflow-description {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #556863;
+}
+
+.showcase-wrapper {
+    width: 100%;
+    background: linear-gradient(135deg, #ffffff 0%, #fafaf9 100%);
+    padding: 100px 0;
+}
+
+.showcase-container {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.8fr 1.5fr;
+    gap: 100px;
+    align-items: center;
+}
+
+/* LEFT */
+.showcase-title {
+    font-size: 52px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+}
+
+.showcase-subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: #92a298;
+    margin: 16px 0 24px;
+}
+
+.showcase-description {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #646464;
+}
+
+/* RIGHT */
+.screens-container {
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screens-scroll {
+    display: flex;
+}
+
+.phone-mockup {
+    width: 280px;
+    height: 580px;
+    background: white;
+    border-radius: 40px;
+    padding: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+    margin-right: -60px;
+    transition: all 0.4s ease;
+}
+
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+    background: #f5f5f4;
+}
+
+.screen-content {
+    text-align: center;
+}
+
+.screen-icon {
+    width: 60px;
+    height: 60px;
+    background: #92a298;
+    border-radius: 16px;
+    margin: 0 auto 16px;
+}
+
+.screen-title {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.screen-subtitle {
+    font-size: 11px;
+    color: #929292;
+}
+
+.screen-label {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 13px;
+    color: #646464;
+}
+
+/* Flow */
+.flow-arrows {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    opacity: 0.3;
+}
+
+.arrow-dot {
+    width: 4px;
+    height: 4px;
+    background: #92a298;
+    border-radius: 50%;
+}
+
+.phone-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 화면 꽉 채움 */
+    display: block;
+}
+
+.arrow-line {
+    width: 12px;
+    height: 2px;
+    background: #92a298;
+    margin-top: 1px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .showcase-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .phone-mockup {
+        width: 240px;
+        height: 500px;
+    }
+}
+
+/* ============================= */
+/* AI FEATURE SECTION - GREEN VERSION */
+/* ============================= */
+
+.ai-feature-section {
+    position: relative;
+    padding: 160px 80px;
+    background: linear-gradient(135deg, #a8b5a0 0%, #9aad98 100%);
+    overflow: hidden;
+    color: #ffffff;
+}
+
+/* Floating soft glow */
+.ai-bg-circles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.ai-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(
+            circle,
+            rgba(255,255,255,0.15) 0%,
+            rgba(255,255,255,0) 70%
+    );
+    animation: aiFloat 8s ease-in-out infinite;
+}
+
+.ai-circle-1 { width: 380px; height: 380px; top: -10%; left: -5%; }
+.ai-circle-2 { width: 280px; height: 280px; top: 50%; right: -5%; }
+.ai-circle-3 { width: 260px; height: 260px; bottom: -5%; left: 15%; }
+
+@keyframes aiFloat {
+    0%,100% { transform: translateY(0px); }
+    50% { transform: translateY(-35px); }
+}
+
+/* Layout */
+.ai-feature-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 120px;
+    align-items: center;
+}
+
+/* ============================= */
+/* LEFT CONTENT */
+/* ============================= */
+
+.ai-feature-headline {
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    margin-bottom: 24px;
+}
+
+.ai-feature-sub {
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0.9;
+    margin-bottom: 36px;
+}
+
+.ai-feature-divider {
+    width: 60px;
+    height: 3px;
+    background: rgba(255,255,255,0.6);
+    margin-bottom: 36px;
+}
+
+.ai-feature-description {
+    font-size: 15px;
+    line-height: 1.9;
+    opacity: 0.85;
+    white-space: pre-line;
+}
+
+/* ============================= */
+/* PHONE MOCKUP */
+/* ============================= */
+
+.ai-phone-frame {
+    width: 340px;
+    height: 680px;
+    border-radius: 50px;
+    padding: 14px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(20px);
+    box-shadow:
+            0 30px 80px rgba(0,0,0,0.25),
+            inset 0 0 0 1px rgba(255,255,255,0.25);
+    position: relative;
+}
+
+.ai-phone-notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px;
+    height: 28px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 0 0 30px 30px;
+}
+
+.ai-phone-screen {
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.ai-phone-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ============================= */
+/* RECOMMENDATION CARD */
+/* ============================= */
+
+.ai-recommendation-card {
+    margin-top: 28px;
+    padding: 20px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    font-size: 13px;
+    line-height: 1.6;
+    color: #3f4a45;
+}
+
+.ai-phone-frame {
+    position: relative;   /* 중요 */
+}
+
+.ai-annotation {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 20;
+}
+
+.ai-dot {
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.3);
+}
+
+.ai-line {
+    width: 90px;
+    height: 2px;
+    background: #ffffff;
+    margin-left: 6px;
+}
+
+.ai-label {
+    margin-left: 14px;
+    padding: 14px 18px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 14px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #1a1a1a;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    white-space: nowrap;
+}
+
+.a1 {
+    top: 180px;
+    right: -260px;
+}
+
+.a2 {
+    top: 315px;
+    right: -315px;
+}
+
+.a3 {
+    top: 430px;
+    right: -325px;
+}
+
+.a4 {
+    top: 510px;
+    right: -275px;
+}
+
+@media (max-width: 1400px) {
+
+    .ai-feature-section {
+        padding: 140px 60px;
+    }
+
+    .ai-feature-container {
+        gap: 80px;
+    }
+
+    .ai-feature-headline {
+        font-size: 46px;
+    }
+
+    .ai-phone-frame {
+        width: 300px;
+        height: 620px;
+    }
+
+    .ai-line {
+        width: 70px;
+    }
+
+    .a1 { right: -220px; }
+    .a2 { right: -260px; }
+    .a3 { right: -270px; }
+    .a4 { right: -230px; }
+}
+
+@media (max-width: 1200px) {
+
+    .ai-feature-container {
+        grid-template-columns: 1fr;
+        gap: 80px;
+        text-align: center;
+    }
+
+    .ai-feature-description {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .ai-phone-frame {
+        margin: 0 auto;
+    }
+
+    /* annotation 살짝 안쪽으로 */
+    .a1, .a2, .a3, .a4 {
+        right: -200px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .ai-feature-section {
+        padding: 100px 40px;
+    }
+
+    .ai-feature-headline {
+        font-size: 36px;
+    }
+
+    .ai-feature-sub {
+        font-size: 18px;
+    }
+
+    .ai-phone-frame {
+        width: 280px;
+        height: 560px;
+    }
+
+    /* annotation 위치 변경 */
+    .ai-annotation {
+        position: static;
+        justify-content: center;
+        margin-top: 16px;
+    }
+
+    .ai-line {
+        display: none;
+    }
+
+    .ai-label {
+        font-size: 12px;
+        padding: 12px 16px;
+    }
+
+    .ai-annotation {
+        display: none;
+    }
+
+    .a1, .a2, .a3, .a4 {
+        top: auto;
+        right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .ai-feature-section {
+        padding: 80px 24px;
+    }
+
+    .ai-feature-headline {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .ai-feature-sub {
+        font-size: 16px;
+    }
+
+    .ai-feature-description {
+        font-size: 14px;
+    }
+
+    .ai-phone-frame {
+        position: relative;
+        overflow: visible;   /* 중요 */
+    }
+
+    .ai-annotation {
+        display: none;
+    }
+
+    .a1, .a2, .a3, .a4 {
+        right: -160px;
+        transform: scale(0.9);
+    }
+}

@@ -39,9 +39,9 @@ export default function Portfolio() {
                     <span>SCROLL</span>
                     <div className="scroll-line"></div>
                 </div>
+
             </section>
 
-            {/* Intro Profile Section */}
             {/* Intro Profile Section */}
             <section className="intro-section">
                 <div className="intro-wrapper">
@@ -77,7 +77,7 @@ export default function Portfolio() {
                             <h3 className="intro-title">LICENSE</h3>
                             <ul className="intro-list">
                                 <li>e-Test Professionals Matser</li>
-                                 <li>AWS Certified AI Practitioner</li>
+                                <li>AWS Certified AI Practitioner</li>
                             </ul>
                         </div>
 
@@ -178,6 +178,395 @@ export default function Portfolio() {
                 </div>
             </section>
 
+            <h2 className="section2-title">대표 프로젝트</h2>
+
+            {/* JobRecord Overview Section */}
+            <section className="jobrecord-overview-section">
+                <div className="jobrecord-overview-container">
+
+                    {/* Left Content */}
+                    <div className="jobrecord-overview-left">
+                        <h2 className="jobrecord-title">JOB RECORD</h2>
+                        <h3 className="jobrecord-subtitle">
+                            AI 기반 취업 준비 활동 기록 & 분석 플랫폼
+                        </h3>
+                        <p className="jobrecord-tagline">
+                            기록을 넘어, 성장을 데이터로 관리하다.
+                        </p>
+
+                        <div className="jobrecord-meta">
+                            <div className="meta-row">
+                                <span className="meta-label">프로젝트 성격</span>
+                                <span>Personal Project</span>
+                            </div>
+                            <div className="meta-row">
+                                <span className="meta-label">역할</span>
+                                <span>Planning / UXUI / Front-end / Back-end</span>
+                            </div>
+                            <div className="meta-row">
+                                <span className="meta-label">완료</span>
+                                <span>2026. 02. 12</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Right App Image */}
+                    <div className="jobrecord-overview-right">
+                        <img
+                            src="/Home.png"
+                            alt="JobRecord App Preview"
+                            className="jobrecord-app-image"
+                        />
+                    </div>
+
+                </div>
+            </section>
+            {/* JobRecord Overview Detail Section */}
+            <section className="jobrecord-detail-section">
+                <div className="jobrecord-detail-container">
+
+                    <header className="jobrecord-detail-header">
+                        <div className="jobrecord-detail-page-title">
+                            Overview
+                        </div>
+                        <h2 className="jobrecord-detail-main-heading">
+                            취업 준비는 기록되지만, 관리되지는 않는다.
+                        </h2>
+                    </header>
+
+                    <div className="jobrecord-detail-grid">
+
+                        {/* Problems */}
+                        <div className="jobrecord-problems">
+
+                            <div className="jobrecord-problem-card">
+                                <h3>활동은 많지만 체계가 없다</h3>
+                                <p>산발적인 활동으로 인한 비효율</p>
+                            </div>
+
+                            <div className="jobrecord-problem-card">
+                                <h3>목표 대비 성취도를 모른다</h3>
+                                <p>정량적 성과 측정 불가</p>
+                            </div>
+
+                            <div className="jobrecord-problem-card">
+                                <h3>카테고리별 편중을 인지하지 못한다</h3>
+                                <p>편향된 활동 패턴 미인식</p>
+                            </div>
+
+                            <div className="jobrecord-problem-card">
+                                <h3>감각에 의존한 자기평가</h3>
+                                <p>객관적 피드백 부재</p>
+                            </div>
+
+                        </div>
+
+                        {/* Solution */}
+                        <div className="jobrecord-solution">
+                            <h2>취업 준비 과정은 다양한 활동으로 구성되지만,<br/>
+                                기록은 흩어져 있고 성과는 체계적으로 관리되지 않습니다.</h2>
+                            <p>
+                                JobRecord는 이러한 문제를 해결하기 위해
+                                취준생의 활동을 카테고리 기반으로 구조화하고,
+                                목표 대비 달성률과 활동 패턴을 데이터로 분석하여
+                                성장을 수치화하는 활동 관리 플랫폼으로 기획되었습니다.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            {/* JobRecord Comparison Slide */}
+            <section className="jobrecord-comparison-slide">
+                <div className="comparison-flat-wrapper">
+
+                    {/* Background Floating Keywords */}
+                    <div className="comparison-bg-circles">
+
+                        {/* Left Side Keywords */}
+                        <div className="bg-circle bg-left bg-1">비효율적인</div>
+                        <div className="bg-circle bg-left bg-2">감각적인</div>
+                        <div className="bg-circle bg-left bg-3">불명확한</div>
+
+                        {/* Right Side Keywords */}
+                        <div className="bg-circle bg-right bg-4">데이터 기반</div>
+                        <div className="bg-circle bg-right bg-5">구조화된</div>
+                        <div className="bg-circle bg-right bg-6">성장 중심</div>
+
+                    </div>
+
+                    <div className="comparison-flat-container">
+
+                        {/* Left Side */}
+                        <div className="comparison-left">
+                            <div className="comparison-content">
+                                <h3 className="comparison-title">
+                                    기존 취업 준비 방식
+                                </h3>
+                                <ul className="comparison-list">
+                                    <li>활동은 많지만 체계가 없다</li>
+                                    <li>목표 대비 성취도를 모른다</li>
+                                    <li>카테고리 편중을 인지하지 못한다</li>
+                                    <li>감각에 의존한 자기평가</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        {/* Center */}
+                        <div className="comparison-center">
+                            <span>
+                                DATA-DRIVEN<br/>
+                                GROWTH<br/>
+                                PLATFORM
+                            </span>
+                        </div>
+
+                        {/* Right Side */}
+                        <div className="comparison-right">
+                            <div className="comparison-content">
+                                <h3 className="comparison-title">
+                                    JOB RECORD
+                                </h3>
+                                <ul className="comparison-list">
+                                    <li>활동을 구조화</li>
+                                    <li>목표 대비 달성률 수치화</li>
+                                    <li>카테고리 분석 시각화</li>
+                                    <li>AI 기반 피드백 제공</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            {/* JobRecord User Flow Section */}
+            <section className="jobrecord-userflow-section">
+                <div className="userflow-container">
+
+                    {/* LEFT – FLOW */}
+                    <div className="userflow-diagram">
+
+                        <div className="flow-horizontal">
+
+                            {/* Auth */}
+                            <div className="flow-group">
+                                <div className="userflow-node primary">Start</div>
+                                <div className="userflow-node">로그인 여부 확인</div>
+                                <div className="userflow-node">온보딩</div>
+                                <div className="userflow-node">로그인 / 회원가입</div>
+                                <div className="userflow-node">가입 완료</div>
+                            </div>
+
+                            <div className="flow-connector"></div>
+
+                            {/* Home */}
+                            <div className="flow-group">
+                                <div className="userflow-node highlight">홈</div>
+                            </div>
+
+                            <div className="flow-connector"></div>
+
+                            {/* Activity */}
+                            <div className="flow-group">
+                                <div className="userflow-node">활동 추가</div>
+                                <div className="userflow-node">활동 저장</div>
+                                <div className="userflow-node">홈 업데이트</div>
+                            </div>
+
+                            <div className="flow-connector"></div>
+
+                            {/* AI */}
+                            <div className="flow-group">
+                                <div className="userflow-node">AI 활동 분석</div>
+                                <div className="userflow-node">30일 데이터 분석</div>
+                                <div className="userflow-node">카테고리 편중 분석</div>
+                                <div className="userflow-node">개선 방향 추천</div>
+                            </div>
+
+                            <div className="flow-connector"></div>
+
+                            {/* Report */}
+                            <div className="flow-group">
+                                <div className="userflow-node">리포트</div>
+                                <div className="userflow-node">주간 / 월간 통계</div>
+                                <div className="userflow-node">카테고리 비율 차트</div>
+                                <div className="userflow-node">목표 달성률</div>
+                            </div>
+
+                            <div className="flow-connector"></div>
+
+                            {/* MyPage */}
+                            <div className="flow-group">
+                                <div className="userflow-node">마이페이지</div>
+                                <div className="userflow-node">프로필 수정</div>
+                                <div className="userflow-node">목표 시간 설정</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    {/* RIGHT – DESCRIPTION */}
+                    <div className="userflow-info">
+                        <h2 className="userflow-title">User Flow</h2>
+                        <p className="userflow-description">
+                            로그인부터 활동 기록, AI 분석, 리포트까지
+                            모든 기능이 데이터 흐름으로 연결됩니다.
+                            각 단계는 사용자의 성장 지표를 형성하며
+                            하나의 구조화된 경험을 완성합니다.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section className="showcase-wrapper">
+                <div className="showcase-container">
+
+                    {/* Left */}
+                    <div className="showcase-info">
+                        <h1 className="showcase-title">App Flow</h1>
+                        <h2 className="showcase-subtitle">
+                            JOB RECORD 주요 화면 구성
+                        </h2>
+                        <p className="showcase-description">
+                            홈 대시보드에서 활동 추가, AI 분석, 리포트까지
+                            사용자의 전체 여정을 보여줍니다.
+                            데이터 기반의 취업 준비를 위한 직관적인 인터페이스를 경험해보세요.
+                        </p>
+                    </div>
+
+                    {/* Right */}
+                    <div className="screens-container">
+                        <div className="screens-scroll">
+
+                            {[
+                                {img: "/Home2.png", label: "Home Dashboard"},
+                                {img: "/Activity.png", label: "Activity"},
+                                {img: "/Report.png", label: "Report"},
+                                {img: "/AI.png", label: "AI Analysis"},
+                                {img: "/ActivityDetail.png", label: "ActivityDetail"},
+                                {img: "/My.png", label: "My Page"},
+                            ].map((screen, i) => (
+                                <div className="phone-mockup" key={i}>
+                                    <div className="phone-notch"/>
+                                    <div className="phone-screen">
+                                        <img
+                                            src={screen.img}
+                                            alt={screen.label}
+                                            className="phone-image"
+                                        />
+                                    </div>
+                                    <div className="screen-label">{screen.label}</div>
+                                </div>
+                            ))}
+
+                        </div>
+
+                        <div className="flow-arrows">
+                            <div className="arrow-dot"/>
+                            <div className="arrow-line"/>
+                            <div className="arrow-dot"/>
+                            <div className="arrow-line"/>
+                            <div className="arrow-dot"/>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            {/* AI Analysis Feature Section */}
+            <section className="ai-feature-section">
+                <div className="ai-bg-circles">
+                    <div className="ai-circle ai-circle-1"/>
+                    <div className="ai-circle ai-circle-2"/>
+                    <div className="ai-circle ai-circle-3"/>
+                </div>
+
+                <div className="ai-feature-container">
+
+                    {/* Left Content */}
+                    <div className="ai-feature-content">
+                        <h2 className="ai-feature-headline">
+                            핵심 AI 기반 활동 분석 시스템
+                        </h2>
+
+                        <p className="ai-feature-sub">
+                            데이터는 기록을 남기고,<br/>
+                            AI는 방향을 제시합니다.
+                        </p>
+
+                        <div className="ai-feature-divider"/>
+
+                        <p className="ai-feature-description">
+                            최근 30일 활동 데이터를 기반으로
+                            카테고리 분포, 목표 대비 달성률, 활동 패턴을 분석합니다.
+                            편중 영역을 도출하고 구체적인 개선 방향과
+                            다음 행동을 제안합니다.
+                        </p>
+                    </div>
+
+                    {/* Right Phone Mockup */}
+                    <div className="ai-phone-container">
+                        <div className="ai-phone-frame">
+
+                            <div className="ai-phone-notch"/>
+
+                            <div className="ai-phone-screen">
+                                <img
+                                    src="/AI.png"
+                                    alt="AI 분석 화면"
+                                    className="ai-phone-image"
+                                />
+                            </div>
+
+                            {/* ===== Annotation 1 ===== */}
+                            <div className="ai-annotation a1">
+                                <div className="ai-dot"/>
+                                <div className="ai-line"/>
+                                <div className="ai-label">
+                                    최근 30일 데이터를 기반으로<br/>
+                                    활동 패턴을 분석합니다.
+                                </div>
+                            </div>
+
+                            {/* ===== Annotation 2 ===== */}
+                            <div className="ai-annotation a2">
+                                <div className="ai-dot"/>
+                                <div className="ai-line"/>
+                                <div className="ai-label">
+                                    사용자의 최근 활동을 정량적으로<br/>
+                                    요약해 보여주는 핵심 지표로 보여줍니다.
+                                </div>
+                            </div>
+
+                            <div className="ai-annotation a3">
+                                <div className="ai-dot"/>
+                                <div className="ai-line"/>
+                                <div className="ai-label">
+                                    분석 결과를 기반으로 사용자의 다음 행동을<br/>
+                                    제안하는 AI 인사이트 카드를 제공합니다.
+                                </div>
+                            </div>
+
+                            <div className="ai-annotation a4">
+                                <div className="ai-dot"/>
+                                <div className="ai-line"/>
+                                <div className="ai-label">
+                                    분석 결과를 바탕으로 실행 가능한 <br/>
+                                    다음 행동을 제안하여 제공합니다.
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
             <section className="experience-section">
                 <div className="section-container">
                     <h2 className="section-title">경험 & 성장</h2>
@@ -229,20 +618,19 @@ export default function Portfolio() {
                         {/* NOW */}
                         <div
                             className="timeline-item current clickable"
-                            onClick={() => scrollToProject("heal")}
+                            onClick={() => scrollToProject("JobRecord")}
                         >
                             <span className="timeline-year">NOW</span>
 
                             <div className="timeline-content linked">
                                 <div className="timeline-meta">
-                                    <span className="project-badge ing">ING</span>
-                                    <span className="project-name">HealLink</span>
+                                    <span className="project-badge launch">LAUNCH</span>
+                                    <span className="project-name">JobRecord</span>
                                 </div>
 
-                                <h3>O2O 메디컬 플랫폼 개발 중</h3>
+                                <h3>AI 기반 취업 준비 활동 기록 & 분석 플랫폼</h3>
                                 <p>
-                                    병원·사용자 연결을 중심으로
-                                    실제 비즈니스 흐름을 고려한 제품 설계를 진행하고 있습니다.
+                                    기록을 넘어 성과를 수치화하고, 다음 행동까지 제안하는 성장 관리 플랫폼입니다.
                                 </p>
                             </div>
                         </div>
@@ -322,6 +710,24 @@ export default function Portfolio() {
                             <p className="project-desc">
                                 미디어 업로드, 태깅, 소셜 그래프를 기반으로
                                 클라이밍 활동을 기록·공유하는 SNS 플랫폼입니다.
+                            </p>
+                            <span className="project-arrow">→</span>
+                        </div>
+                    </div>
+
+                    <div
+                        id="project-JobRecord"
+                        className="project-card"
+                        onClick={() => window.open("https://github.com/sheepheeseok/job-record-app.git", "_blank")}
+                    >
+                        <img src="/jobrecord.png" className="project-img" alt="Mood Diary"/>
+
+                        <div className="project-overlay">
+                            <p className="project-number">03</p>
+                            <h3 className="project-title">Job Record</h3>
+                            <p className="project-desc">
+                                활동 기록, 카테고리 구조화, 목표 관리 데이터를 기반으로
+                                취업 준비 과정을 분석·관리하는 플랫폼입니다.
                             </p>
                             <span className="project-arrow">→</span>
                         </div>
